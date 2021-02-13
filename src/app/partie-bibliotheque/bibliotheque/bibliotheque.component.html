@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+
+<div class="main-content">
+  <div *ngFor="let number of listNumber">
+    <app-carte-bibliotheque [numUser]="number"></app-carte-bibliotheque>
+  </div>
+</div>

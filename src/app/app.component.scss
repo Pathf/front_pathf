@@ -1,0 +1,76 @@
+.content {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Les génériques :
+.genericButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0px   1px;
+  cursor: pointer;
+}
+
+// tool bar
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  font-weight: bolder;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+// navigation
+.navigation-container {
+  position: absolute;
+  background-color: rgba($color: #dbdbdb, $alpha: 1.0);
+  height: 80%;
+  margin-top: 0px;
+}
+
+.navigation-sidenav {
+  //align-items: center; // a faire
+  display: flex;
+  width: 300px;
+
+  align-items: center;
+
+  border-right: 5px groove #000000;
+  border-bottom: 5px groove #000000;
+  border-bottom-right-radius: 10px;
+}
+
+.navButton {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.menuIcon {
+    margin-right: 10px;
+}
+
+// parametre
+.paramButton {
+  font-size: 20px;
+  margin-right: 10px;
+}
