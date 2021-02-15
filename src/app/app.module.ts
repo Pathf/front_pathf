@@ -10,21 +10,21 @@ import { MatListModule } from '@angular/material/list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BibliothequeComponent } from './partie-bibliotheque/bibliotheque/bibliotheque.component';
-import { CarteBibliothequeComponent } from './partie-bibliotheque/carte-bibliotheque/carte-bibliotheque.component';
-import { HomeComponent } from './home/home.component';
+import { MediaLibraryComponent } from './area-web-site/media-library/media-library.component';
+import { UserCardComponent } from './area-web-site/media-library/view-media-library/user-card/user-card.component';
+import { HomeComponent } from './area-web-site/home/home.component';
 import { FourOhFourComponent } from './area-web-site/four-oh-four/four-oh-four.component';
-import { DetailCarteBibliothequeComponent } from './partie-bibliotheque/detail-carte-bibliotheque/detail-carte-bibliotheque.component';
+import { DetailUserCardComponent } from './area-web-site/media-library/view-media-library/detail-user-card/detail-user-card.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BibliothequeComponent,
-    CarteBibliothequeComponent,
+    MediaLibraryComponent,
+    UserCardComponent,
     HomeComponent,
     FourOhFourComponent,
-    DetailCarteBibliothequeComponent
+    DetailUserCardComponent
   ],
   imports: [
     AppRoutingModule,

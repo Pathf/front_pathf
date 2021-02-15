@@ -1,16 +1,16 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { listUserTestPossession } from '../../models/constant/example';
-import { UserPossession } from '../../models/userPossession';
+import { listUserTestPossession } from '../../../../models/constant/example';
+import { UserPossession } from '../../../../models/userPossession';
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-carte-bibliotheque',
-  templateUrl: './carte-bibliotheque.component.html',
-  styleUrls: ['./carte-bibliotheque.component.scss']
+  selector: 'app-user-card',
+  templateUrl: './user-card.component.html',
+  styleUrls: ['./user-card.component.scss']
 })
-export class CarteBibliothequeComponent implements OnInit {
+export class UserCardComponent implements OnInit {
   userCard: UserPossession;
 
   @Input() numUser: number;
@@ -30,8 +30,6 @@ export class CarteBibliothequeComponent implements OnInit {
     this.router.navigate(['/' + this.userCard.name.toLowerCase() + '/' + type]);
   }
 
-  
-
   test(){
     console.log('Test');
     let test = 'http://localhost:8080/userpossession';
@@ -40,9 +38,6 @@ export class CarteBibliothequeComponent implements OnInit {
       console.log(data);
       return null;
     })).subscribe();
-    /*subscribe(data => {
-      console.log(data);
-    });*/
   }
 }
 
