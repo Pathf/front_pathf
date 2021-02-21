@@ -1,11 +1,11 @@
 <mat-card class="carte" (click)="redirectionToUser()">
   <mat-card-header>
     <img mat-card-avatar class="noel-icon"/>
-    <mat-card-title>Carte de {{ userCard.name }}</mat-card-title>
+    <mat-card-title>Carte de {{ userCard.nameUser }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <div *ngFor="let groupType of userCard.listByType">
-      <button (click)="test()">{{ groupType.type }}</button>
+    <div *ngFor="let media of userCard.medias">
+      <button (click)="test()">{{ media.typeMedia }}</button>
       <!--redirectionToTypeUser(groupType.type)">{{ groupType.type }}</button>-->
     </div>
   </mat-card-content>

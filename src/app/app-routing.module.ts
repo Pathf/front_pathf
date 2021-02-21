@@ -10,13 +10,11 @@ export const USERS: string[] = ['pathf','neo']; // a supprimer
 
 const routes: Routes = [
   { path: PAGES[0], component: HomeComponent },
-  { path: PAGES[1], component: MediaLibraryComponent },
-  { path: PAGES[1] + '/' + USERS[0] , component: MediaLibraryComponent },
-  { path: PAGES[1] + '/' + USERS[1] , component: MediaLibraryComponent },
-  { path: PAGES[1] + '/detail' , component: DetailUserCardComponent },
-  { path: '', component: HomeComponent },
-  { path: 'not-found', component: FourOhFourComponent },
-  { path: '**', redirectTo: 'not-found' }
+  { path: 'bibliotheque', component: MediaLibraryComponent },
+  { path: 'bibliotheque/:name', component: MediaLibraryComponent },
+  { path: 'bibliotheque/:name/:detail' , component: DetailUserCardComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: FourOhFourComponent }
 ];
 
 @NgModule({
